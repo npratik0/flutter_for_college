@@ -11,5 +11,5 @@ class EmployeeModel {
     required this.fullname,
     required this.gender,
     required this.department,
-  }) : id = id ?? const Uuid().v4(); // auto-generate UUID
+  }) : id = id ?? const Uuid().v4();
 }
