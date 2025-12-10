@@ -13,18 +13,18 @@ class GridViewScreen extends StatelessWidget {
       body: GridView.count(
         padding: const EdgeInsets.all(8),
         crossAxisSpacing: 8,
-        crossAxisCount: 3,
         mainAxisSpacing: 8,
+        crossAxisCount: 3,
         children: [
-          for (int i = 1; i < 7; i++) ...{
+          for (int i = 1; i <= 10; i++) ...{
             SizedBox(
               child: ElevatedButton(
                 onPressed: () {},
-                child: Text('$i', style: const TextStyle(fontSize: 50)),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blue,
                   foregroundColor: Colors.white,
                 ),
+                child: Text('$i', style: const TextStyle(fontSize: 40)),
               ),
             ),
           },
