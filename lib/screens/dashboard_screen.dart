@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_for_college/screens/bottom_navigation_screen.dart';
 import 'package:flutter_for_college/screens/employeeview_screen.dart';
+import 'package:flutter_for_college/screens/image_screen.dart';
 import 'listview_screen.dart';
 import 'gridview_screen.dart';
 import 'cardview_screen.dart';
@@ -137,6 +139,43 @@ class DashboardScreen extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                               builder: (context) => const EmployeeviewScreen(),
+                            ),
+                          );
+                        },
+                      ),
+
+                      _buildDashboardCard(
+                        context,
+                        title: 'ImageView',
+                        subtitle: 'Image View layout examples',
+                        icon: Icons.layers_rounded,
+                        gradient: LinearGradient(
+                          colors: [Colors.orange, Colors.orange.shade400],
+                        ),
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const ImageScreen(),
+                            ),
+                          );
+                        },
+                      ),
+
+                      _buildDashboardCard(
+                        context,
+                        title: 'ImageView',
+                        subtitle: 'Image View layout examples',
+                        icon: Icons.layers_rounded,
+                        gradient: LinearGradient(
+                          colors: [Colors.orange, Colors.orange.shade400],
+                        ),
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) =>
+                                  const BottomNavigationScreen(),
                             ),
                           );
                         },
