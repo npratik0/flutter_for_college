@@ -36,7 +36,10 @@ class _ListViewScreenState extends State<ListViewScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ListView'),
+        title: const Text(
+          'ListView',
+          style: TextStyle(fontFamily: 'OpenSans bold', fontSize: 20),
+        ),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
       body: SingleChildScrollView(
